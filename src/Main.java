@@ -57,5 +57,6 @@ public class Main {
         for (Person personal : personals) {
             System.out.println(personal);
         }
+
     }
     }
