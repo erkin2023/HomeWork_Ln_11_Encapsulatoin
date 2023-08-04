@@ -1,17 +1,29 @@
 public class University {
-    private String name;
+    private String name ;
     private String location;
     private int foundationYear;
 
-    public void installName(String name) {
+    public String getName() {
+        return name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public int getFoundationYear() {
+        return foundationYear;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void installLocation(String location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
-    public void installFoundationYear(int foundationYear) {
+    public void setFoundationYear(int foundationYear) {
         this.foundationYear = foundationYear;
     }
 

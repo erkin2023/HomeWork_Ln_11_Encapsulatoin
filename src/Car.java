@@ -1,26 +1,38 @@
 public class Car {
-    private String make;
+    private String company;
     private String model;
-    private int year;
+    private int years;
 
-    public void installMake(String make) {
-        this.make = make;
+    public String getCompany() {
+        return company;
     }
 
-    public void installModel(String model) {
+    public String getModel() {
+        return model;
+    }
+
+    public int getYears() {
+        return years;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public void setModel(String model) {
         this.model = model;
     }
 
-    public void installYear(int year) {
-        this.year = year;
+    public void setYears(int years) {
+        this.years = years;
     }
 
     @Override
     public String toString() {
         return "Car{" +
-                "make='" + make + '\'' +
+                "company='" + company + '\'' +
                 ", model='" + model + '\'' +
-                ", year=" + year +
+                ", years=" + years +
                 '}';
     }
 }

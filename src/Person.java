@@ -1,23 +1,38 @@
+import javax.swing.text.html.parser.TagElement;
+
 public class Person {
-    private String name;
+    private String name ;
     private int age;
     private String gender;
 
-    public void installName(String name) {
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void installAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void installGender(String gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
+
     @Override
     public String toString() {
-        return "Personal{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
